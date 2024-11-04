@@ -1,40 +1,41 @@
 {
-
-    "version": 2,
-
-    "builds": [{
-        "src": "index.js",
-        "use": "@now/node-server"
-    }],
-    "routes": [{
-            "headers": {
-                "Access-Control-Allow-Origin": "*",
-                "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-                "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
-            },
-            "src": "/last",
-            "dest": "index.js",
-            "methods": ["GET"]
-        },
-        {
-            "headers": {
-                "Access-Control-Allow-Origin": "*",
-                "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-                "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
-            },
-            "src": "/euro",
-            "dest": "index.js",
-            "methods": ["GET"]
-        }, {
-            "headers": {
-                "Access-Control-Allow-Origin": "*",
-                "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-                "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
-            },
-            "src": "/milhao",
-            "dest": "index.js",
-            "methods": ["GET"]
-        }
-    ]
-
+  "version": 2,
+  "routes": [
+    {
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
+      },
+      "src": "/last",
+      "dest": "index.ts",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
+      },
+      "src": "/euro",
+      "dest": "index.ts",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
+      },
+      "src": "/milhao",
+      "dest": "index.ts",
+      "methods": [
+        "GET"
+      ]
+    }
+  ]
 }
