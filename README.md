@@ -16,30 +16,21 @@
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 </p>
 
+## Bun-Vercel
+
+Check the readme in `./bun-vercel` for more info.
+
 ## Try:
 
-* Live server - https://euro-millions.lazynessmind.now.sh/
+* Live server - euro-millions-api.vercel.app
 
 ## Description:
 
 Last Euro Millions Results using web scraping.
 
-### How to run:
-
-`$ bun start`
-
-### API:
-
--Get lastest results for the Euro Millions and M1lhão - localhost:3000/last
--Get lastest results for the Euro Millions - localhost:3000/euro
--Get M1lhão Date and Code - localhost:3000/milhao
-
-**PS:** The response will always be a json object;
-
 ### Dependencies:
 
 * **cheerio** https://github.com/cheeriojs/cheerio
-* **express** https://github.com/expressjs/express
 * **ky** https://github.com/sindresorhus/ky
 
-### License MIT | marcosantos98 2020
+### License MIT | marcosantos98 2024
